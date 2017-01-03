@@ -104,7 +104,7 @@ public class Notifications extends Service {
                 .setContentIntent(pi)
                 .setSubText("click...")
                 .setPriority(Notification.PRIORITY_DEFAULT)
-                //.setAutoCancel(true)
+                .setAutoCancel(true)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setStyle(ns)
                 .setContentText("with the following Texts");

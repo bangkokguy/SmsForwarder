@@ -46,8 +46,6 @@ public class ResultActivity extends AppCompatActivity {
     Bundle bundle;
     Intent startIntent;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +60,7 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
-        if(DEBUG) Log.d(TAG, "onCreate");
+        if(DEBUG)Log.d(TAG, "onCreate");
 
         startIntent = getIntent();
         bundle = startIntent.getExtras();

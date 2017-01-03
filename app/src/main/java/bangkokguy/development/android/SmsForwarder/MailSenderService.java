@@ -66,7 +66,7 @@ public class MailSenderService extends IntentService {
         try { // try to send the mail
             // m.addAttachment("/sdcard/filelocation");  // For attachment
             if(m.send()) {
-                if (DEBUG)Log.i(TAG, "---email was sent ok");
+                if (DEBUG)Log.d(TAG, "---email was sent ok");
             } else {
                 Log.e(TAG, "email was not sent, send() returned false");}
         } catch(Exception e) {
