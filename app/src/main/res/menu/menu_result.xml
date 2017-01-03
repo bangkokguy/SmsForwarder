@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bangkokguy.development.android.SmsForwarder.ResultActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_majom"
+        android:orderInCategory="100"
+        android:title="@string/action_majom"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_farka"
+        android:orderInCategory="100"
+        android:title="@string/action_farka"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_kerek"
+        android:orderInCategory="100"
+        android:title="@string/action_kerek"
+        app:showAsAction="never" />
+</menu>

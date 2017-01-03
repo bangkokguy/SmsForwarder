@@ -1,0 +1,1 @@
+include ':app', ':bangkokguy.java.mail', ':activation', ':mail', ':additionnal'

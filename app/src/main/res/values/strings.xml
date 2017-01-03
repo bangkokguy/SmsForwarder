@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">SmsForwarder</string>
+    <string name="hello_world">hellow world</string>
+    <string name="title_activity_result">SmsForwarder</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_majom">Majom</string>
+    <string name="action_farka">Farka</string>
+    <string name="action_kerek">Kerek</string>
+
+    <string name="message_text">Message</string>
+    <string name="sender_name">Sender</string>
+    <string name="sender_number">Sender number</string>
+    <string name="email_to_send">Email to send</string>
+    <string name="number_of_contacts">Number of contacts found</string>
+
+</resources>
