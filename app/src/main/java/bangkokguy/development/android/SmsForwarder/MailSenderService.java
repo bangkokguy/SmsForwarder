@@ -24,8 +24,8 @@ import bangkokguy.java.mail.Mail;
 /**
  * Intent service to send emails from android app.
  * Uses java classes provided by 3rd party.
- * @Author bangkokguy
- * @Version 1.0
+ * Author bangkokguy
+ * Version 1.0
  */
 public class MailSenderService extends IntentService {
 
@@ -47,7 +47,7 @@ public class MailSenderService extends IntentService {
      */
     static void mySendMail(String textBody, ArrayList<String> sendTo, String subject) {
         //First log in to our email
-        Mail m = new Mail("laszlo.g.gergely@gmail.com", "bazdmeg12");
+        Mail m = new Mail("laszlo.g.gergely@gmail.com", "Idefix#12");
         if (DEBUG)Log.d(TAG, "connected to google");
 
         //Than initialize our email fields
@@ -178,7 +178,7 @@ public class MailSenderService extends IntentService {
      */
     private Cursor findContactByNumber(Context context, String phoneNumber) {
 
-        Cursor cur = context.getContentResolver().query(
+        return context.getContentResolver().query(
             Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, Uri.encode(phoneNumber)), // uri
             new String[] {  // projection
                 ContactsContract.PhoneLookup._ID,
@@ -187,13 +187,13 @@ public class MailSenderService extends IntentService {
             ContactsContract.PhoneLookup.IN_VISIBLE_GROUP + " = '" + ("1") + "'", //selection
             null,           //selectionArgs
             null);          //sortOrder);
-        return cur;
+
     }
 
     /**
      * Returns a List object containing the Group Titles
      * associated with the contact we are using
-     * @param   contact
+     * @param   contact tbd
      * @return  List<String>
      */
     private ArrayList<String> getContacts(Cursor contact) {
@@ -217,8 +217,8 @@ public class MailSenderService extends IntentService {
      * associated with the contact we are using
      * This method always returns immediately, whether or not the
      * List contains any data.
-     * @param   context
-     * @param   contact
+     * @param   context tbd
+     * @param   contact tbd
      * @return  List<String>
      */
     private List<String> getGroupsTitle(Context context, Cursor contact) {
